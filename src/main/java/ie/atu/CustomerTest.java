@@ -23,6 +23,19 @@ public class CustomerTest {
         System.out.println(part1Customer);
         System.out.println(part2Customer);
 
+        PreferredCustomer pc = new PreferredCustomer();
+        pc.setName("Charlie Customer");
+        pc.setAddress("3 Middle Road");
+        pc.setPhoneNumber("0871112222");
+        pc.setCustomerNumber(2001);
+        pc.setMailingList(true);
+
+        System.out.println(pc);
+
+        pc.addLoyaltyPoints(700);
+        System.out.println(pc);
+        pc.addLoyaltyPoints(800);
+        System.out.println(pc);
 
 
     }
