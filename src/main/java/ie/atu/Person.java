@@ -15,6 +15,12 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
+    public Person() {
+        this.name = "";
+        this.address = "";
+        this.phoneNumber = "";
+    }
+
     public String getName() {
         return name;
     }
