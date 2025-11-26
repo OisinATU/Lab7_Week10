@@ -15,6 +15,12 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
+    public Person() {
+        this.name = "";
+        this.address = "";
+        this.phoneNumber = "";
+    }
+
     public String getName() {
         return name;
     }
@@ -39,4 +45,12 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
 }
